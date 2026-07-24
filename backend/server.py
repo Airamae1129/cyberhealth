@@ -21,7 +21,13 @@ db = client[os.environ['DB_NAME']]
 
 # Create the main app without a prefix
 app = FastAPI()
-
+@app.get("/")
+async def home():
+    return {
+        "status": "running",
+        "service": "Cyberhealth API",
+        "version": "1.0"
+    }
 # Create a router with the /api prefix
 api_router = APIRouter(prefix="/api")
 
