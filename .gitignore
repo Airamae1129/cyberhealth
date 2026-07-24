@@ -80,3 +80,19 @@ memory/test_credentials.md
 
 # Mobile development
 android-sdk/
+
+# React
+frontend/node_modules/
+frontend/build/
+
+# Python
+backend/.venv/
+backend/__pycache__/
+
+# Environment
+.env
+backend/.env
+frontend/.env
+
+# Logs
+*.log
