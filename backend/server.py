@@ -20,13 +20,18 @@ client = AsyncIOMotorClient(mongo_url)
 db = client[os.environ['DB_NAME']]
 
 # Create the main app without a prefix
-app = FastAPI()
+app = FastAPI(
+    title="Cyberhealth API",
+    version="1.0.0"
+)
+
+
 @app.get("/")
-async def home():
+async def health_check():
     return {
         "status": "running",
-        "service": "Cyberhealth API",
-        "version": "1.0"
+        "service": "Cyberhealth Backend",
+        "message": "API is online"
     }
 # Create a router with the /api prefix
 api_router = APIRouter(prefix="/api")
