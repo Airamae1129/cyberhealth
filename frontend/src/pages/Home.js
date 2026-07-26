@@ -104,7 +104,7 @@ const Home = () => {
           />
           {/* Gradient overlay for readability */}
           <div className="absolute inset-0 bg-gradient-to-br from-[#1a1a2e]/90 via-[#16213e]/85 to-[#0f3460]/80" />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#1a1a2e] via-transparent to-transparent" />
+          <div className="absslute inset-0 bg-gradient-to-t from-[#1a1a2e] via-transparent to-transparent" />
         </motion.div>
 
         {/* Animated grid pattern */}
