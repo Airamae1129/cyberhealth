@@ -175,7 +175,7 @@ const Services = () => {
   return (
     <div className="min-h-screen bg-white text-gray-900">
       {/* Hero Section */}
-      <section className="relative pt-32 pb-16 bg-gradient-to-br from-[#1a1a2e] via-[#16213e] to-[#0f3460] overflow-hidden">
+      <section className="relative pt-32 pb-16  bg-[#202020]">
         {/* Animated grid */}
         <div className="absolute inset-0 opacity-10">
           <div className="absolute inset-0" style={{

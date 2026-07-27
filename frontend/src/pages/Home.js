@@ -103,13 +103,14 @@ const Home = () => {
             className="w-full h-full object-cover object-center"
           />
           {/* Gradient overlay for readability */}
-          <div className="absolute inset-0 bg-gradient-to-br from-[#1a1a2e]/90 via-[#16213e]/85 to-[#0f3460]/80" />
-          <div className="absslute inset-0 bg-gradient-to-t from-[#1a1a2e] via-transparent to-transparent" />
+          {/* Modern Dark Grey Overlay */}
+          <div className="absolute inset-0 bg-gradient-to-br from-[#1A1C20]/75 via-[#2A2D33]/55 to-[#3A3D44]/45" />
+          {/* Bottom Fade */}
+          <div className="absolute inset-0 bg-gradient-to-t from-[#111315]/70 via-transparent to-transparent" />
         </motion.div>
-
-        {/* Animated grid pattern */}
-        <div className="absolute inset-0 z-10 opacity-10">
+        <div className="absolute inset-0 opacity-10">
           <div className="absolute inset-0" style={{
+            backgroundImage: `linear-gradient(#c89344 1px, transparent 1px), linear-gradient(90deg, #c89344 1px, transparent 1px)`,
             backgroundSize: '50px 50px'
           }} />
         </div>
@@ -126,8 +127,8 @@ const Home = () => {
                 left: `${20 + i * 20}%`,
                 top: `${10 + i * 15}%`,
                 background: i % 3 === 0 
-                  ? 'radial-gradient(circle, rgba(237, 173, 75, 0.3), transparent)' 
-                  : 'radial-gradient(circle, rgba(116, 164, 240, 0.2), transparent)'
+                  ? 'radial-gradient(circle, rgba(138, 101, 44, 0.9), transparent)' 
+                  : 'radial-gradient(circle, rgba(10, 92, 225, 0.2), transparent)'
               }}
               animate={{
                 x: [0, 30, 0],
@@ -247,10 +248,10 @@ const Home = () => {
       </section>
 
       {/* Stats Section */}
-      <section className="relative py-16 bg-gradient-to-br from-[#1a1a2e] to-[#16213e] overflow-hidden">
+      <section className="relative py-16 bg-[#202020]">
         <div className="absolute inset-0 opacity-5">
-          <div style={{
-            backgroundImage: `radial-gradient(circle at 25% 25%, #c89344 2px, transparent 2px)`,
+           <div style={{
+            backgroundImage: `radial-gradient(circle at 10% 20%,  #c89344 2px, radial-gradient(circle at 90% 80%, white 2px, transparent 2px)`,
             backgroundSize: '30px 30px',
             width: '100%',
             height: '100%'
